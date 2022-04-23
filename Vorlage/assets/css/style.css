@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* fonts & colors
+font-family: 'Roboto', sans-serif;
+
+Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+.background-img {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/ilustracion1.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    position: relative;
+
+}
+
+.downslide img {
+    width: 55%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/ilustracion_people.png');
+    animation: downslide 3s infinite;
+    position: absolute;
+    left: 45%;
+}
+
+@keyframes downslide {
+    from {
+        top: -300px;
+    }
+
+    to {
+        10px;
+    }
+}
+
+.logo {
+    width: 3%;
+    /* height: 2%; */
+    background-size: 20%;
+    display: inline-block;
+    margin: 2% 0 0 2%;
+    position: fixed;
+}
+
+.logoheadline {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 3.2vh 4vh 4vh 11vh;
+}
+
+.logoheadline h3 {
+    font-size: 1.4rem;
+}
+
+.background-img h1 {
+    width: 45%;
+    font-size: 4rem;
+    margin: 17% 0 2% 7%;
+}
+
+.background-img h2 {
+    font-size: 1.2rem;
+    margin: 0 0 0 7%;
+    line-height: 1.5;
+    font-weight: 300;
+    display: inline-block;
+    width: 45%;
+}
+
+.rocket {
+    width: 57%;
+    display: inline-block;
+}
+
+.rocket img {
+    width: 6%;
+}
+
+.scroll2learn {
+    margin-top: 4%;
+}
+
+.scroll2learn a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #ff3571;
+    margin-left: 7%;
+    font-weight: 600;
+}
+
+/*projects background-img  */
+
+.projects-img-background {
+    height: 100vh;
+    background-image: url('../img/images.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+/* every idea */
+
+
+.idea-container {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.idea-container h2 {
+    width: 41.5%;
+    font-size: 3rem;
+    padding: 3rem;
+    margin-left: 13%;
+}
+
+.idea-container article {
+    font-weight: 300;
+    line-height: 1.8;
+    width: 70%;
+    padding: 3.9rem 4.1rem 3rem 3rem;
+}
+
+.quote-headline h2 {
+    width: 60%;
+    /* background: blue; */
+    font-size: 3rem;
+    padding: 3rem;
+    margin: 0 0 13% 13%;
+
+}
+
+/* four - suggestions */
+
+.question-top {
+    height: 25vh;
+    background: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    line-height: 1.5;
+}
+
+.your-question {
+    width: 45%;
+    background: rgb(0, 255, 123);
+    padding: 1% 1% 0 1%;
+
+}
+
+.your-value {
+    width: 45%;
+    background: rgb(255, 0, 204);
+    padding: 1% 1% 0 1%;
+}
+
+.question-bottom {
+    height: 25vh;
+    background: rgb(43, 0, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    line-height: 1.5;
+}
+
+.your-design {
+    width: 45%;
+    background: rgb(255, 0, 0);
+    padding: 1% 1% 0 1%;
+}
+
+.your-share {
+    width: 45%;
+    background: rgb(192, 219, 205);
+    padding: 1% 1% 0 1%;
+}
+
+/* main */
+.letsgo {
+    text-align: center;
+    margin: 10% 5% 10% 5%;
+}
+
+.letsgo h3 {
+    font-size: 3rem;
+    margin: 2% 0;
+}
+
+.letsgo p {
+    line-height: 1.5;
+}
+
+.container-findproblems {
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+}
+
+.findproblems-img {
+    width: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.numberOne {
+    font-size: 3rem;
+
+}
