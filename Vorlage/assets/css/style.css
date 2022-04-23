@@ -7,6 +7,8 @@ Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
 
 */
 
+/* -------------- generals ----------------- */
+
 * {
     padding: 0;
     margin: 0;
@@ -18,7 +20,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* header */
+/*---------------- header ---------------- */
 
 .background-img {
     width: 100%;
@@ -28,7 +30,6 @@ html {
     background-repeat: no-repeat;
     background-position-x: right;
     position: relative;
-
 }
 
 .downslide img {
@@ -106,7 +107,7 @@ html {
     font-weight: 600;
 }
 
-/*projects background-img  */
+/*---------------- projects background-img----------------  */
 
 .projects-img-background {
     height: 100vh;
@@ -116,7 +117,7 @@ html {
 
 }
 
-/* every idea */
+/*--------------- every idea ------------------*/
 
 
 .idea-container {
@@ -144,54 +145,47 @@ html {
     /* background: blue; */
     font-size: 3rem;
     padding: 3rem;
-    margin: 0 0 13% 13%;
+    margin: 0 0 10% 13%;
 
 }
 
-/* four - suggestions */
+/* -------------suggestions--------------------------- */
+.four-suggestions-section {
+    display: flex;
+    font-size: 1rem;
+}
+
+.four-suggestions-section h2 {
+    font-weight: 500 bold;
+    font-size: 1rem;
+}
+
+.four-suggestions-section p {
+    font-weight: 300;
+}
 
 .question-top {
-    height: 25vh;
-    background: yellow;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    line-height: 1.5;
-}
-
-.your-question {
-    width: 45%;
-    background: rgb(0, 255, 123);
-    padding: 1% 1% 0 1%;
-
-}
-
-.your-value {
-    width: 45%;
-    background: rgb(255, 0, 204);
-    padding: 1% 1% 0 1%;
+    margin-left: 19%;
 }
 
 .question-bottom {
-    height: 25vh;
-    background: rgb(43, 0, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    line-height: 1.5;
+    margin-left: 10%;
 }
 
-.your-design {
-    width: 45%;
-    background: rgb(255, 0, 0);
-    padding: 1% 1% 0 1%;
+.question-top,
+.question-bottom {
+    line-height: 2;
 }
 
-.your-share {
-    width: 45%;
-    background: rgb(192, 219, 205);
-    padding: 1% 1% 0 1%;
+.your-question {
+    margin-bottom: 24%;
 }
+
+.your-value {
+    margin-bottom: 19%;
+}
+
+/* --------------main----challenge---------------------- */
 
 /* main */
 .letsgo {
@@ -208,19 +202,87 @@ html {
     line-height: 1.5;
 }
 
-.container-findproblems {
+/* section 01 -04 */
+
+.container-challenge {
     display: flex;
     justify-content: space-between;
-    margin: 10%;
 }
 
-.findproblems-img {
+.container-challenge article {
     width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.left-img {
+    width: 85%;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 5% 5% 25% 15%;
 }
 
-.numberOne {
-    font-size: 3rem;
+.right-img {
+    width: 85%;
+    background-size: cover;
+    background-repeat: no-repeat;
 
+}
+
+.number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #dddddd;
+    margin-bottom: 2rem;
+}
+
+.Emoji {
+    font-size: 2rem;
+}
+
+/* -------------footer----------------- */
+
+
+footer h2 {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 2;
+    margin-top: 5rem;
+}
+
+footer h3 {
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer div {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer [target="email"] {
+    margin-top: 1rem;
+    padding: 2% 10%;
+    border-style: none;
+    font-size: 1.2rem;
+    box-shadow: 0 0 1em #dddddd;
+    border-radius: 2%;
+}
+
+footer [target="Subscribe"] {
+    margin-top: 1rem;
+    padding: 1.5% 7%;
+    border-style: none;
+    font-size: 1.2rem;
+    background: #ff3571;
+    color: #fff;
+    border-radius: 2%;
+}
+
+footer p {
+    margin: 15% 0 2% 5%;
+    font-weight: 200;
 }
