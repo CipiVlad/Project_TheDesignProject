@@ -37,7 +37,7 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('../img/ilustracion_people.png');
-    animation: downslide 3s infinite;
+    animation: downslide 3s ease-in-out infinite;
     position: absolute;
     left: 45%;
 }
@@ -178,12 +178,30 @@ html {
 }
 
 .your-question {
-    margin-bottom: 24%;
+    margin-top: 1%;
+    margin-bottom: 21%;
 }
 
 .your-value {
-    margin-bottom: 19%;
+    margin-bottom: 10%;
 }
+
+/* -------------------icons_____________________ */
+
+.img-yellow,
+.img-blue {
+    width: 2.5%;
+    position: absolute;
+    left: 15%;
+}
+
+.img-green,
+.img-red {
+    width: 2.5%;
+    position: absolute;
+    right: 43%;
+}
+
 
 /* --------------main----challenge---------------------- */
 
@@ -281,6 +299,7 @@ footer [target="Subscribe"] {
     color: #fff;
     border-radius: 2%;
 }
+
 
 footer p {
     margin: 15% 0 2% 5%;
