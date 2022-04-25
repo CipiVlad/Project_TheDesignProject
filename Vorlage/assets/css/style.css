@@ -25,31 +25,37 @@ html {
 .background-img {
     width: 100%;
     height: 100vh;
-    background: url('../img/ilustracion1.png');
-    background-size: 60%;
-    background-repeat: no-repeat;
+    background: url('../img/ilustracion1.png') no-repeat;
+    background-size: 55%;
     background-position-x: right;
     position: relative;
 }
 
 .downslide img {
     width: 55%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../img/ilustracion_people.png');
-    animation: downslide 3s ease-in-out infinite;
+    background: url('../img/ilustracion_people.png') no-repeat contain;
+    animation: downslide 3s;
+    animation-fill-mode: both;
     position: absolute;
     left: 45%;
 }
 
 @keyframes downslide {
-    from {
-        top: -300px;
+
+    0% {
+        top: -100vh;
+        right: 0;
     }
 
-    to {
-        10px;
+    50% {
+        top: 20vh;
+        right: 14vh;
     }
+
+    100% {
+        top: 1vh;
+    }
+
 }
 
 .logo {
@@ -64,17 +70,22 @@ html {
 .logoheadline {
     display: inline-block;
     font-size: 0.8rem;
-    margin: 3.2vh 4vh 4vh 11vh;
+    margin: 3.2vh 4% 4vh 6%;
 }
 
 .logoheadline h3 {
     font-size: 1.4rem;
 }
 
+
+
 .background-img h1 {
-    width: 45%;
     font-size: 4rem;
-    margin: 17% 0 2% 7%;
+    margin-left: 7%;
+}
+
+.background-img h1:first-of-type {
+    margin-top: 17%;
 }
 
 .background-img h2 {
@@ -83,12 +94,12 @@ html {
     line-height: 1.5;
     font-weight: 300;
     display: inline-block;
-    width: 45%;
+    width: 44%;
 }
 
 .rocket {
     width: 57%;
-    display: inline-block;
+    display: inline;
 }
 
 .rocket img {
@@ -111,10 +122,8 @@ html {
 
 .projects-img-background {
     height: 100vh;
-    background-image: url('../img/images.jpg');
+    background: url('../img/images.jpg') no-repeat;
     background-size: contain;
-    background-repeat: no-repeat;
-
 }
 
 /*--------------- every idea ------------------*/
@@ -142,21 +151,19 @@ html {
 
 .quote-headline h2 {
     width: 60%;
-    /* background: blue; */
     font-size: 3rem;
     padding: 3rem;
     margin: 0 0 10% 13%;
-
 }
 
 /* -------------suggestions--------------------------- */
 .four-suggestions-section {
     display: flex;
     font-size: 1rem;
+    justify-content: space-evenly;
 }
 
 .four-suggestions-section h2 {
-    font-weight: 500 bold;
     font-size: 1rem;
 }
 
@@ -165,11 +172,11 @@ html {
 }
 
 .question-top {
-    margin-left: 19%;
+    width: 30%;
 }
 
 .question-bottom {
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 
 .question-top,
@@ -177,13 +184,12 @@ html {
     line-height: 2;
 }
 
-.your-question {
-    margin-top: 1%;
-    margin-bottom: 21%;
+.your-design {
+    margin-top: 10%;
 }
 
-.your-value {
-    margin-bottom: 10%;
+.your-share {
+    margin-top: 10%;
 }
 
 /* -------------------icons_____________________ */
@@ -192,14 +198,14 @@ html {
 .img-blue {
     width: 2.5%;
     position: absolute;
-    left: 15%;
+    left: 10%;
 }
 
 .img-green,
 .img-red {
     width: 2.5%;
     position: absolute;
-    right: 43%;
+    right: 44%;
 }
 
 
@@ -237,16 +243,11 @@ html {
 
 .left-img {
     width: 85%;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin: 5% 5% 25% 15%;
 }
 
 .right-img {
     width: 85%;
-    background-size: cover;
-    background-repeat: no-repeat;
-
 }
 
 .number {
@@ -268,6 +269,7 @@ footer h2 {
     text-align: center;
     line-height: 2;
     margin-top: 5rem;
+    position: relative;
 }
 
 footer h3 {
@@ -288,6 +290,7 @@ footer [target="email"] {
     font-size: 1.2rem;
     box-shadow: 0 0 1em #dddddd;
     border-radius: 2%;
+    visibility: visible;
 }
 
 footer [target="Subscribe"] {
@@ -298,10 +301,27 @@ footer [target="Subscribe"] {
     background: #ff3571;
     color: #fff;
     border-radius: 2%;
+    visibility: visible;
 }
 
+footer [target="Subscribe"]:hover {
+    background: linear-gradient(#7535ff, #ff355d);
+    color: #fff;
+}
 
 footer p {
     margin: 15% 0 2% 5%;
     font-weight: 200;
+}
+
+#backToheader {
+    background-color: #7535ff;
+    margin-top: 1rem;
+    padding: 1.5% 7%;
+    border-style: none;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 2%;
+    visibility: hidden;
+
 }

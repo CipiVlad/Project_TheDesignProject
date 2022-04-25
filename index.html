@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="background-img">
             <div class="logo">
                 <img src="vorlage/assets/img/logo.svg" alt="">
@@ -20,7 +20,8 @@
                 <p>by a WebDesigner</p>
                 <div class="downslide"><img src="/Vorlage/assets/img/ilustracion_people.png" alt=""></div>
             </div>
-            <h1> How to become a better designer?</h1>
+            <h1> How to become a </h1>
+            <h1>a better designer?</h1>
             <h2>A challenge to improve your product design skills by solving
                 problems in your daily life. <div class="rocket"><img src="Vorlage/assets/img/rocket.png" alt=""></div>
             </h2>
@@ -47,15 +48,15 @@
             </h2>
         </div>
     </header>
-    <section class="four-suggestions-section" id="">
+    <section class="four-suggestions-section">
         <div class="question-top">
             <div class="your-question">
                 <div class="img-yellow">
                     <img src="Vorlage/assets/img/title02.svg" alt="">
                 </div>
                 <h2>Start with asking why</h2>
-                <p>You will start seeing things differently and coming</p>
-                <p>up with more effective ways of achieving goals.</p>
+                <p>You will start seeing things differently and coming
+                    up with more effective ways of achieving goals.</p>
             </div>
             <div class="your-design">
                 <div class="img-blue"> <img src="Vorlage/assets/img/title01.svg" alt=""></div>
@@ -147,15 +148,19 @@
     </main>
     <footer>
         <form action="" onsubmit="return false">
-            <h2 id="confirmation">Do you like this challange?</h2>
-            <h2 id="thx"></h2>
-            <h3 id="pleaseclick">Subscribe to be the first to hear about uptdates, tips and recommendations!</h3>
-            <div> <input type="email" placeholder="Write your email here" target="email">
+            <div id="div-form">
+                <h2 id="confirmation">Do you like this challange?</h2>
+                <h3 id="thx"></h3>
+                <h3 id="pleaseclick">Subscribe to be the first to hear about uptdates, tips and recommendations!</h3>
+                <div> <input id="email" type="email" placeholder="Write your email here" target="email" required>
+                </div>
+                <div> <input id="button" type="submit" value="Subscribe" target="Subscribe" onclick="hitsubscribe()">
+                </div>
+                <button id="backToheader" onclick="hitBack()">Click-Back to Top!</button>
+                <p>createed with ♥︎ by Cipi</p>
             </div>
-            <div> <input id="button" type="submit" value="Subscribe" target="Subscribe" onclick="hitsubscribe()">
-            </div>
-            <p>createed with ♥︎ by Cipi</p>
         </form>
+
     </footer>
     <script src="Vorlage/assets/js/main.js"></script>
 
